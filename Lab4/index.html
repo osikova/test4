@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title> Exercise 3 </title>
+    </head>
+<body class="main">
+    <header class="headerblock">
+        <img class="logo" src="logok.jpg" alt="logo" />
+        <div class="header">
+            <h1 class="main_header"> Книги </h1>
+        </div>
+    </header>
+    <nav class="nav">
+        <h3><a href="#links">Детские</a> <a href="#table">Психология</a> <a href="#form">Фантастика</a> <a href="#author">Рецепты</a></h3>
+    </nav>
+<div id="cont">
+    <div class="contentblock" id="links">
+        <h2 class="h2">Список гиперссылок</h2>
+        <ol>
+            <li>
+            <a href="http://example.com" target="_blank"> Абсолютная гиперссылка
+            на главную страницу сайта example.com; </a>
+            </li>
+            <li>
+            <a href="http://example.com" target="_blank"> Абсолютная гиперссылка
+            на главную сайта example.com в протоколе "https"; </a>
+            </li>
+            <li>
+            <a href="ftp://ftp.redcom.ru" target="_blank">Ссылка на файл на
+            сервере FTP без авторизации </a>
+            </li>
+            <li>
+            <a href="ftp://user:pass123@tavalik.ru" target="_blank">Ссылка на файл на
+            сервере FTP с авторизацией </a>
+            </li>
+            <li>
+            <a href="http://www.example.com/about" target="_blank">Ссылка на фрагмент
+            страницы некоторого сайта </a>
+            </li>
+            <li>
+            <a href="#dno">Ссылка на фрагмент текущей страницы</a>
+            </li>
+            <li>
+            <a href="https://www.wildberries.ru/catalog/0/search.aspx?
+            search.aspx?search=корма%20для%20дегу&amp;sort=popular"
+            target="_blank">Ссылка с двумя параметрами в URL</a>
+            </li>
+            <li>
+            "Список ссылок с подписями title"
+            </li>
+            <ul>
+            <li>
+            <a href="index.html" title=
+            "Подробнее" target="_blank">Подробнее</a>
+            </li>
+            <li>
+            <a href="" title="Ссылки">Ссылки</a>
+            </li>
+            </ul>
+            <li>
+            <a>Ссылка без href</a>
+            </li>
+            <li>
+            <a href="" target="_blank">Ссылка с пустым href</a>
+            </li>
+            <li>
+            <a href="http://example.ru" rel="nofollow" target="_blank">
+            Ссылка по которой запрещен переход поисковикам</a>
+            </li>
+            <li>
+            <a href="http://example.ru" target="_blank">
+            Ссылка запрещенная для индексации поисковикам</a>
+            </li>
+            <li>
+            "Контекстная"
+            <a href="https://ru.wikipedia.org/wiki/Маск,_Илон"
+            target="_blank">ссылка</a>
+            "в тексте абзаца"
+            </li>
+            <li>
+            <a href="kniga.jpg">
+            <img src="kniga.jpg"
+            width="50" height="50">
+            </a>
+            </li>
+            <li>
+            <img src="kniga.jpg"
+            usemap="foto" width="300" height="350">
+            </li>
+            <li>
+            <a href="web1.html" target="_blank">
+            Относительная ссылка на страницу в текущем каталоге</a>
+            </li>
+            <li>
+            <a href="about/about.html" target="_blank">
+            Относительная ссылка на страницу в каталоге about</a>
+            </li>
+            <li>
+            <a href="../web1.html" target="_blank">
+            Относительная ссылка на страницу в каталоге уровнем выше текущего</a>
+            </li>
+            <li>
+            <a href="../../web1.html" target="_blank">
+            Относительная ссылка на страницу в каталоге двумя уровнями выше</a>
+            </li>
+            <li>
+            <a href="/web1.html" target="_blank">
+            Сокращенная ссылка на главную</a>
+            </li>
+            <li>
+            <a href="demo.html" target="_blank">
+            Cсылка на внутреннюю страницу</a>
+            </li>
+            </ol>
+    </div>
+	
+    <div class="contentblock" id="table">
+        <h2 class="h2">Таблица</h2>
+        <table class="table">
+            <tr class="table_even">
+                <td colspan="4">Количество книг</td>
+            </tr>
+            <tr class="table_even">
+                <th>Детские</th>
+                <th>Психология</th>
+                <th>Фантастика</th>
+                <th>Рецепты</th>
+            </tr>
+          
+            <tr class="table_odd">
+			    <td>967</td>
+                <td>564</td>
+                <td>908</td>
+                <td>1031</td> 
+            </tr>
+            
+            
+        </table>
+    </div>
+	
+    <div class="contentblock" id="form">
+        <h2 class="h2">Форма</h2>
+        <form action="URL_отправки_данных" method="POST" class="form">
+             Введите имя:<br />
+        <input name="field1"
+        value="Julia" />
+        <br />
+    
+      <label>
+        Введите свой email:<br />
+        <input name="field3"
+          type="email" />
+      </label><br />
+      <label>
+        Текстовое поле даты:<br />
+        <input name="field3"
+          type="date" />
+      </label><br />
+      Пол:<br />
+      <label><input type="radio" name="radio1" value="val1" />мужской</label>
+      <label><input type="radio" name="radio1" value="val2" />женский</label><br />
+	  Количество конечностей:<br />
+      <label><input type="radio" name="radio2" value="val1" />2 ноги, 2 руки</label>
+	  <label><input type="radio" name="radio2" value="val2" />2 ноги, 1 рука</label>
+	  <label><input type="radio" name="radio2" value="val2" />1 нога,  2 руки</label>
+      <label><input type="radio" name="radio2" value="val3" />1 рука, 1 нога</label><br />	
+	  Сверхспособности:<br />
+        <label><select name="field4"
+          multiple="multiple">
+          <option value="val1">Бессмертие</option>
+          <option value="val2" selected="selected">Прохождение скозь стены</option>
+		  <option value="val3">Левитация</option>
+          <option value="val4">Чтение мыслей</option>
+        </select>
+      </label><br />
+	  <label>
+        Биография:<br />
+        <textarea name="field5">Напишите о себе</textarea>
+      </label><br />
+      <label><input type="checkbox" name="check-1" /> с контрактом ознакомлен (а) </label>
+      <input type="submit" value="Отправить" />
+    </form> 
+	
+    </div>
+    <footer class="footer" id="author">
+        <h5>© Юлия Осикова</h5>
+    </footer>
+</div>
+</body>
+</html>
